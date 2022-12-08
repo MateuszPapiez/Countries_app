@@ -13,7 +13,7 @@ struct ContentView: View {
         NavigationView {
             
             VStack {
-                Text("Todo : country list")
+                Text("TODO:- country list")
                 
                 
             }
