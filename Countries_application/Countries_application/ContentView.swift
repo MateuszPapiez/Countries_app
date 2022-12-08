@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        NavigationView{
+        NavigationView {
             
             VStack {
                 Text("Todo : country list")
