@@ -13,12 +13,11 @@ struct ContentView: View {
         NavigationView{
             
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Hello, world!")
+                Text("Todo : country list")
+                
+                
             }
-            .navigationTitle("XYZ")
+            .navigationTitle("Countries")
             .padding()
         }
     }
