@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7BE206294353D800137FCF /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BE205294353D800137FCF /* CountryList.swift */; };
 		4B8D2EA42942644E007C78DE /* Countries_applicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D2EA32942644E007C78DE /* Countries_applicationApp.swift */; };
 		4B8D2EA62942644E007C78DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D2EA52942644E007C78DE /* ContentView.swift */; };
 		4B8D2EA82942644F007C78DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D2EA72942644F007C78DE /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B7BE205294353D800137FCF /* CountryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
 		4B8D2EA02942644E007C78DE /* Countries_application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries_application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8D2EA32942644E007C78DE /* Countries_applicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries_applicationApp.swift; sourceTree = "<group>"; };
 		4B8D2EA52942644E007C78DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				4B8D2EA32942644E007C78DE /* Countries_applicationApp.swift */,
 				4B8D2EA52942644E007C78DE /* ContentView.swift */,
+				4B7BE205294353D800137FCF /* CountryList.swift */,
 				4B8D2EA72942644F007C78DE /* Assets.xcassets */,
 				4B8D2EA92942644F007C78DE /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				4B8D2EA62942644E007C78DE /* ContentView.swift in Sources */,
 				4B8D2EA42942644E007C78DE /* Countries_applicationApp.swift in Sources */,
+				4B7BE206294353D800137FCF /* CountryList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
