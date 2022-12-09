@@ -16,20 +16,24 @@ struct ContentView: View {
                     .ignoresSafeArea(.all)
                 
                 VStack {
+                    
                     List{
-                        HStack{
-                            Text("🇵🇱")
-                                .font(.system(size: 32))
-                            VStack(alignment: .leading, spacing: 1)
-                            {
-                                Text("Polska")
-                                    .font(.system(size: 18))
-                                Text("Warszawa")
-                                    .font(.system(size: 14))
-                                    .foregroundColor(.gray)
-                                
+                        NavigationLink(destination: TestView()){
+                            HStack{
+                            
+                                Text("🇵🇱")
+                                    .font(.system(size: 32))
+                                VStack(alignment: .leading, spacing: 1)
+                                {
+                                    Text("Polska")
+                                        .font(.system(size: 18))
+                                    Text("Warszawa")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(.gray)
+                                    
+                                }
+                                //padd
                             }
-                            //padd
                         }
                         HStack{
                             Text("🇩🇪")

@@ -9,30 +9,24 @@ import SwiftUI
 
 struct Country: Identifiable {
     let id = UUID()
-    let name: String
-    let image_flag: String
+    let flag_image: String
+    let country_name: String
     let capital: String
 }
 
-let c_list: [Country] = [ 
+
+let country_lists: [Country] = [
     Country(
-        //id: ,
-        name: "Poland",
-        image_flag: "🇵🇱",
-        capital: "Warszawa")
-
+        //id: " ",
+        flag_image: "🇵🇱",
+        country_name: "Poland",
+        capital: "Warszawa"),
+    Country(
+        //id: " ",
+        flag_image: "🇵🇱",
+        country_name: "Poland",
+        capital: "Warszawa"),
 ]
-    
-
-            
 
 
 
-
-
-
-struct CountryList_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
