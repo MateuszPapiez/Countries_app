@@ -1,24 +1,46 @@
-//
-//  ContentView.swift
-//  Countries_application
-//
-//  Created by Mateusz Papież on 08/12/2022.
-//
 
 import SwiftUI
 
+struct URLItem: Identifiable {
+    let id = UUID()
+    let link: URL
+}
+enum C_list: String, Identifiable, Hashable {
+    var id: Self { self }
+    case flag_image
+    case country_name
+    case capital
+}
+
 struct ContentView: View {
+
+    @State private var State: String = ""
+    @State private var Flag_image: String = ""
+    @State private var Capital: String = ""
+    
     var body: some View {
         
         NavigationView {
             
-            VStack {
-                Text("TODO:- country list")
+            ZStack {
                 
+                Color(MyColor.background_color)
+                    .ignoresSafeArea(.all)
+                
+                VStack {
+                    List {
+                        NavigationLink(destination: CountryInfo()){
+                            CountryElement()
+                        }
+                    }
+                    .listStyle(.inset)
+                    .cornerRadius(15)
+                    
+                }
+                .navigationTitle("Countries")
+                .padding()
                 
             }
-            .navigationTitle("Countries")
-            .padding()
         }
     }
 }
