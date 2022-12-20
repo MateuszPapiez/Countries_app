@@ -1,66 +1,36 @@
-//
-//  ContentView.swift
-//  Countries_application
-//
-//  Created by Mateusz Papież on 08/12/2022.
-//
 
 import SwiftUI
 
+struct URLItem: Identifiable {
+    let id = UUID()
+    let link: URL
+}
+enum C_list: String, Identifiable, Hashable {
+    var id: Self { self }
+    case flag_image
+    case country_name
+    case capital
+}
+
 struct ContentView: View {
+
+    @State private var State: String = ""
+    @State private var Flag_image: String = ""
+    @State private var Capital: String = ""
+    
     var body: some View {
         
         NavigationView {
+            
             ZStack {
-                Color("Background")
+                
+                Color(MyColor.background_color)
                     .ignoresSafeArea(.all)
                 
                 VStack {
-                    
-                    List{
-                        NavigationLink(destination: TestView()){
-                            HStack{
-                            
-                                Text("🇵🇱")
-                                    .font(.system(size: 32))
-                                VStack(alignment: .leading, spacing: 1)
-                                {
-                                    Text("Polska")
-                                        .font(.system(size: 18))
-                                    Text("Warszawa")
-                                        .font(.system(size: 14))
-                                        .foregroundColor(.gray)
-                                    
-                                }
-                                //padd
-                            }
-                        }
-                        HStack{
-                            Text("🇩🇪")
-                                .font(.system(size: 32))
-                            VStack(alignment: .leading, spacing: 1)
-                            {
-                                Text("Niemcy")
-                                    .font(.system(size: 18))
-                                Text("Berlin")
-                                    .font(.system(size: 14))
-                                    .foregroundColor(.gray)
-                            }
-                            
-                        }
-
-                        HStack{
-                            Text("🇫🇷")
-                                .font(.system(size: 32))
-                            VStack(alignment: .leading, spacing: 1)
-                            {
-                                Text("Francja")
-                                    .font(.system(size: 18))
-                                Text("Paryż")
-                                    .font(.system(size: 14))
-                                    .foregroundColor(.gray)
-                            }
-                            
+                    List {
+                        NavigationLink(destination: CountryInfo()){
+                            CountryElement()
                         }
                     }
                     .listStyle(.inset)
@@ -69,6 +39,7 @@ struct ContentView: View {
                 }
                 .navigationTitle("Countries")
                 .padding()
+                
             }
         }
     }
