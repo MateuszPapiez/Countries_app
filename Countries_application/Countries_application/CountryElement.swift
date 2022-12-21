@@ -1,6 +1,19 @@
 
 import SwiftUI
 
+struct URLItem: Identifiable {
+    let id = UUID()
+    let link: URL
+}
+enum C_list: String, Identifiable, Hashable {
+    var id: Self { self }
+    case flag_image
+    case country_name
+    case capital
+}
+
+
+
 struct CountryElement: View {
     var body: some View {
 
