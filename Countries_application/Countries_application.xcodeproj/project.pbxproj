@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B3E4DEF2951FFBD00949847 /* CountryElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E4DEE2951FFBD00949847 /* CountryElement.swift */; };
+		4B064E9B295B186F00ADCC89 /* CountryElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E4DEE2951FFBD00949847 /* CountryElement.swift */; };
 		4B4ABFD52943B34D000FEF70 /* App_Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4ABFD42943B34D000FEF70 /* App_Color.swift */; };
 		4B7BE206294353D800137FCF /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BE205294353D800137FCF /* CountryList.swift */; };
 		4B7BE20829437AE000137FCF /* CountryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BE20729437AE000137FCF /* CountryInfo.swift */; };
@@ -106,13 +106,13 @@
 		4B8D2EA22942644E007C78DE /* Countries_application */ = {
 			isa = PBXGroup;
 			children = (
+				4B3E4DEE2951FFBD00949847 /* CountryElement.swift */,
 				4B8D2EA32942644E007C78DE /* Countries_applicationApp.swift */,
 				4B4ABFD42943B34D000FEF70 /* App_Color.swift */,
 				4B7BE20729437AE000137FCF /* CountryInfo.swift */,
 				4B8D2EA52942644E007C78DE /* ContentView.swift */,
 				4B918CD5295233200084600D /* ApiModels.swift */,
 				4B918CD3295231970084600D /* ApiMenager.swift */,
-				4B3E4DEE2951FFBD00949847 /* CountryElement.swift */,
 				4B7BE205294353D800137FCF /* CountryList.swift */,
 				4B8D2EA72942644F007C78DE /* Assets.xcassets */,
 				4B8D2EA92942644F007C78DE /* Preview Content */,
@@ -277,10 +277,10 @@
 			files = (
 				4B918CD6295233200084600D /* ApiModels.swift in Sources */,
 				4B7BE20829437AE000137FCF /* CountryInfo.swift in Sources */,
-				4B3E4DEF2951FFBD00949847 /* CountryElement.swift in Sources */,
 				4B918CD4295231970084600D /* ApiMenager.swift in Sources */,
 				4B8D2EA62942644E007C78DE /* ContentView.swift in Sources */,
 				4B8D2EA42942644E007C78DE /* Countries_applicationApp.swift in Sources */,
+				4B064E9B295B186F00ADCC89 /* CountryElement.swift in Sources */,
 				4B7BE206294353D800137FCF /* CountryList.swift in Sources */,
 				4B4ABFD52943B34D000FEF70 /* App_Color.swift in Sources */,
 			);

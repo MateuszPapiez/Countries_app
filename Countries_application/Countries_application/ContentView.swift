@@ -10,14 +10,11 @@ enum C_list: String, Identifiable, Hashable {
     case flag_image
     case country_name
     case capital
+    case svg
 }
 
 struct ContentView: View {
 
-    @State private var State: String = ""
-    @State private var Flag_image: String = ""
-    @State private var Capital: String = ""
-    
     var body: some View {
         
         NavigationView {
@@ -29,17 +26,18 @@ struct ContentView: View {
                 
                 VStack {
                     List {
-                        NavigationLink(destination: CountryInfo()){
-                            CountryElement()
+                        ForEach(country_lists){ c in
+                            NavigationLink(destination: CountryInfo(flag_image:c.flag_image, country_name: c.country_name, capital: c.capital)){
+                                CountryElement(flag_image:c.flag_image, country_name: c.country_name, capital: c.capital)
+                            }
                         }
+                        .listStyle(.inset)
+                        .cornerRadius(15)
+                        
                     }
-                    .listStyle(.inset)
-                    .cornerRadius(15)
-                    
+                    .navigationTitle("Countries")
+                    .padding()
                 }
-                .navigationTitle("Countries")
-                .padding()
-                
             }
         }
     }

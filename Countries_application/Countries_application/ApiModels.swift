@@ -1,11 +1,3 @@
-//
-//  ApiModels.swift
-//  Countries_application
-//
-//  Created by Mateusz Papież on 20/12/2022.
-//
-
-
 
 import Foundation
 //protokoly Decodable - Json na Swift
