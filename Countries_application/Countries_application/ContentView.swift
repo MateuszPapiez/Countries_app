@@ -5,6 +5,7 @@ struct URLItem: Identifiable {
     let id = UUID()
     let link: URL
 }
+
 enum C_list: String, Identifiable, Hashable {
     var id: Self { self }
     case flag_image
@@ -32,12 +33,14 @@ struct ContentView: View {
                             }
                         }
                         .listStyle(.inset)
-                        .cornerRadius(15)
+                        .cornerRadius(5)
                         
                     }
                     .navigationTitle("Countries")
                     .padding()
+                    
                 }
+                
             }
         }
     }
