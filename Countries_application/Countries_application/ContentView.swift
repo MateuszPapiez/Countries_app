@@ -1,6 +1,7 @@
 
 import SwiftUI
 
+
 struct URLItem: Identifiable {
     let id = UUID()
     let link: URL
