@@ -20,6 +20,6 @@ struct CountryInfo: View {
 
 struct CountryInfo_Previews: PreviewProvider {
     static var previews: some View {
-        CountryInfo(flag_image: "🇵🇱", country_name: "Polska", capital: "Warszawa")
+        CountryInfo(flag_image: "🇵🇱", country_name: " Polska", capital: "Warszawa")
     }
 }
